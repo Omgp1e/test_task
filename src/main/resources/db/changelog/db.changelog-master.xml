@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+           http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="schemas/00-create-schemas.xml" relativeToChangelogFile="true"/>
+    <include file="ref/01-create-price-table.xml" relativeToChangelogFile="true"/>
+    <include file="ref/02-create-product-table.xml" relativeToChangelogFile="true"/>
+    <include file="ref/03-create-customers-table.xml" relativeToChangelogFile="true"/>
+    <include file="fact/04-create-actuals-table.xml" relativeToChangelogFile="true"/>
+    <include file="fact/05-add-promo-flag-column.xml" relativeToChangelogFile="true"/>
+    <include file="fact/06-sync-actuals-sequence.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>
